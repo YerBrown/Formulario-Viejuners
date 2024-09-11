@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Club Viejuners</title>
+    <link rel="stylesheet" href="style-viejuners.css">
+</head>
+<body>
+    <header>
+        <h1>El Club Viejuners</h1>
+    </header>
+    <h2>Formulario de admision:</h2>
+    <form method="POST">
+        <fieldset>
+            <legend>Tu:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" tabindex="1" placeholder="Nombre" required autofocus><br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" tabindex="2" placeholder="Apellidos" required><br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" tabindex="3" placeholder="60" required><br><br>
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino" tabindex="4" >
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino" tabindex="5" >
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="otro" name="sexo" value="otro" tabindex="6" checked required>
+            <label for="otro">Otro</label><br><br>
+            <label for="me-siento-viejuner">Me siento viejuner:</label>
+            <input type="checkbox" id="me-siento-viejuner" name="me-siento-viejuner" tabindex="7" required><br><br>
+            <label for="algo-sobre-ti">Escribe algo sobre tí:</label><br>
+            <textarea name="algo-sobre-ti" id="algo-sobre-ti" rows="5" cols="30" tabindex="8" placeholder="Escribe algo sobre ti..." required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Tus circunstancias:</legend>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="mail" id="correo" name="correo" tabindex="9" placeholder="usuario@mail.net" required><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" tabindex="10" placeholder="666 666 666" required>
+        </fieldset>
+        <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

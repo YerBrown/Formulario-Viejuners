@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ladronzuelos de bicicletas</title>
+    <link rel="stylesheet" href="style-policia.css">
+</head>
+
+<body>
+    <header>
+        <h1>Policia</h1>
+    </header>
+    <h2>Formulario de robo de bicicleta:</h2>
+    <form method="POSt">
+        <fieldset>
+            <legend>Datos Necesarios:</legend>
+            <label for="dia">Dia:</label>
+            <input type="date" id="dia" name="dia" tabindex="1" required><br><br>
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora" tabindex="2" required><br><br>
+            <label for="color-bicicleta">Color de la bicicleta:</label>
+            <input type="color" name="color-bicicleta" id="color-bicicleta" tabindex="3" required><br><br>
+            <label for="precio">Rango de precio: 0 &#x20AC</label>
+            <input type="range" name="precio" id="precio" min="0" max="1000" step="50" tabindex="4" required>
+            <label for="precio">1000 &#x20AC</label><br><br>
+            <label for="tipo">Tipo de bicicleta:</label>
+            <select name="tipo" id="tipo" tabindex="5" required>
+                <optgroup label="Paseo">
+                    <option value="señorial">Señorial</option>
+                    <option value="anti-plebeyos">Anti-plebeyos</option>
+                    <option value="por-encima-del-hombro">PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="gamusinos">Gamusinos</option>
+                    <option value="hueleflores-premium">Hueleflores premium</option>
+                    <option value="fango-lover">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option value="metroymedio">Metroymedio</option>
+                    <option value="3-de-la-tarde-fluorescente-edition">3 de la tarde. Fluorescente edition</option>
+                    <option value="grupitors">Grupitors</option>
+                </optgroup>
+            </select><br><br>
+            <label for="accesorios">Accesorios:</label><br>
+            <select name="accesorios[]" id="accesorios" tabindex="6" multiple>
+                <option value="ruedines">Ruedines</option>
+                <option value="pegatinas">Pegatinas</option>
+                <option value="cestita">Cestita</option>
+                <option value="bomba-aire">Bomba de aire</option>
+                <option value="timbre">Timbre</option>
+                <option value="foco">Foco</option>
+            </select><br><br>
+            <label for="marca">¿Qué marca era?:</label>
+            <datalist id="marcas">
+                <option value="specialized">
+                <option value="trek">
+                <option value="merida">
+                <option value="scott">
+                <option value="giant">
+                <option value="cube">
+                <option value="lapierre">
+                <option value="orbea">
+                <option value="cannondale">
+                <option value="bmc">
+                <option value="canyon">
+                <option value="look">
+                <option value="protek">
+                <option value="megamo">
+                <option value="pinarello">
+                <option value="bianchi">
+                <option value="bh">
+                <option value="factor">
+                <option value="ghost">
+                <option value="cervélo">
+                <option value="argon">
+            </datalist>
+            <input type="text" id="marca" name="marca" list="marcas" tabindex="7" required><br><br>
+            <input type="reset" tabindex="8" value="Borrar">
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
